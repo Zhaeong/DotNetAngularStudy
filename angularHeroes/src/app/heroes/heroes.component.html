@@ -1,0 +1,12 @@
+<ul class="heroes">
+  <li *ngFor="let h of hero" routerLink="/detail/{{ h.id }}">
+    <span class="badge">
+      {{ h.id }}
+    </span>
+    {{ h.name }}
+  </li>
+</ul>
+
+<!--
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+-->
